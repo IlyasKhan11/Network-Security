@@ -1,6 +1,6 @@
 import sys
 
-from networksecurity.logging import logging
+from networksecurity.logging.logger import logging
 
 
 class NetworkSecurityException(Exception):
@@ -21,5 +21,5 @@ if __name__ == "__main__":
         a=1/0
         print("this should not run")
 
-    except NetworkSecurityException as e:
+    except Exception as e:
         raise NetworkSecurityException(e, sys)
