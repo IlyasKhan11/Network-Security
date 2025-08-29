@@ -15,11 +15,11 @@ class NetworkSecurityException(Exception):
         return f"Error occurred in script: {self.filename} at line: {self.lineno} with message: {self.error_message}"
 
 
-if __name__ == "__main__":
-    try:
-        logging.info("Enter the try block.")
-        a=1/0
-        print("this should not run")
+# if __name__ == "__main__":
+#     try:
+#         logging.info("Enter the try block.")
+#         a=1/0
+#         print("this should not run")
 
-    except Exception as e:
-        raise NetworkSecurityException(e, sys)
+#     except Exception as e:
+#         raise NetworkSecurityException(e, sys)

@@ -3,5 +3,8 @@ numpy
 python-dotenv
 pymongo
 certifi
-
+pymongo[srv]
+pyaml
+dill
+scikit-learn
 -e .
